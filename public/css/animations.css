@@ -1,0 +1,67 @@
+
+/* animações */
+@keyframes oculos{
+    from{
+        opacity: 0;
+        transform: translateY(-12em);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes up{
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes right{
+    from{
+        transform: translateX(-100px);
+    }
+    to{
+        transform: translateX(0);
+
+    }
+}
+
+@keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.animate-oculos {
+    animation-name: oculos;
+    animation-duration: 3000ms;
+    animation-fill-mode: backwards;
+}
+
+.animate-up {
+    animation-name: up;
+    animation-duration: 1000ms;
+    animation-fill-mode: backwards; 
+}
+
+.animate-right {
+    animation-name: right;
+    animation-duration: 1000ms;
+    animation-fill-mode: backwards;
+}
+
+.animate-appear {
+    animation-name: appear;
+    animation-duration: 1000ms;
+    animation-fill-mode: backwards;
+  }
